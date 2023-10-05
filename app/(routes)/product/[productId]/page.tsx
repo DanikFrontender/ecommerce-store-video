@@ -13,7 +13,7 @@ interface ProductPageProps {
 	}
 }
 
-// @ts-expect-error Server Component
+// @ts-ignore
 const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
 	const product = await getProduct(params.productId)
 	const suggestedProducts = await getProducts({

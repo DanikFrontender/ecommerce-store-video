@@ -24,7 +24,7 @@ export default function RootLayout({
 			<body className={font.className}>
 				<ModalProvider />
 				<ToastProvider />
-				{/* @ts-expect-error Server Component */}
+				{/* @ts-ignore */}
 				<Navbar />
 				{children}
 				<Footer />
